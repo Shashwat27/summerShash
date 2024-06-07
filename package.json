@@ -1,0 +1,20 @@
+{
+  "name": "technicalpotato",
+  "version": "1.0.0",
+  "description": "1. [Description](#description)\r 2. [Entity Relationship Diagram](#entity-relationship-diagram)\r 3. [Relations](#relations)\r 4. [SQL Tables Used](#sql-tables-used)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
