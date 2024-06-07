@@ -1,4 +1,4 @@
-# summerShash 
+# Technical Potato
 
 ## Table of Contents
 1. [Description](#description)
@@ -7,7 +7,7 @@
 4. [SQL Tables Used](#sql-tables-used)
 
 ## Description
-The **summerSash** is a note-taking application that provides a simple and efficient way for users to record and access their memories. The app is designed to make it easy for users to create and store notes, which can be accessed after signing in.
+The **Technical Potato** is a note-taking application that provides a simple and efficient way for users to record and access their memories. The app is designed to make it easy for users to create and store notes, which can be accessed after signing in.
 
 ### Features:
 - **User Registration**: The app offers a straightforward registration process, allowing new users to create an account quickly.
