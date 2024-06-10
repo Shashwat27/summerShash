@@ -1,4 +1,4 @@
-# Technical Potato 
+# Technical Potato
 
 ## Table of Contents
 1. [Description](#description)
