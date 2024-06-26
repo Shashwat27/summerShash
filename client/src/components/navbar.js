@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Register from './register';
 
 const CustomNavbar = () => {
   const navigate = useNavigate();
@@ -23,7 +22,6 @@ const CustomNavbar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link onClick={() => navigate('/home')}>Home</Nav.Link>
-          <Nav.Link onClick={() => navigate('/post')}>Post</Nav.Link>
           <Nav.Link onClick={() => navigate('/register')}>Register</Nav.Link>
           <Nav.Link onClick={() => navigate('/login')}>Login</Nav.Link>
         </Nav>

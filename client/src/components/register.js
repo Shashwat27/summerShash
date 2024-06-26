@@ -14,6 +14,7 @@ const Register = () => {
 
   return (
     <Container>
+        <br></br><br></br>
       <h2>Register</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formFirstName">
