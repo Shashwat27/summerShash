@@ -29,5 +29,5 @@ app.use('/user',userRoutes);
 app.use('/post', postRoutes);
 app.use('/postAttribute', postAttributesRoutes);
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}!!!`))

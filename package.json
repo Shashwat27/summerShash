@@ -4,12 +4,14 @@
   "description": "1. [Description](#description)\r 2. [Entity Relationship Diagram](#entity-relationship-diagram)\r 3. [Relations](#relations)\r 4. [SQL Tables Used](#sql-tables-used)",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js ",
+    "client": "npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.7.0",
@@ -17,6 +19,7 @@
     "mysql2": "^3.6.5"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.3"
   }
 }
