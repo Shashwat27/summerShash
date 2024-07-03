@@ -44,24 +44,25 @@ async function getPost(postId) {
     return await Post.findOne({ postId }).populate('username');
 }
 
-async function updatePost(postId, description) {
+async function updatePost(_id, description) {
     const updateResult = await Post.findOneAndUpdate(
-        { postId },
+        { _id },
         { description}
     );
     return updateResult;
 }
 
-async function deletePost(postId) {
-    const deleteResult = await Post.findOneAndDelete({ postId });
+async function deletePost(_id) {
+    const deleteResult = await Post.findOneAndDelete({ _id });
     if (!deleteResult) {
         throw new Error('No post found with the given postId');
     }
     return deleteResult;
 }
 
-async function getAllPosts() {
-    return await Post.find().populate('userId');
+async function getAllPosts(username) {
+    return await Post.find({ username });
+    return posts;
 }
 
 module.exports = { Post, createPost, getPost, updatePost, deletePost, getAllPosts };

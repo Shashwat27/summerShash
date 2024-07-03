@@ -22,7 +22,7 @@ const CustomNavbar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link onClick={() => navigate('/home')}>Home</Nav.Link>
-          <Nav.Link onClick={() => navigate('/home')}>Post</Nav.Link>
+          <Nav.Link onClick={() => navigate('/profile')}>Profile</Nav.Link>
           <Nav.Link onClick={() => navigate('/register')}>Register</Nav.Link>
           <Nav.Link onClick={() => navigate('/login')}>Login</Nav.Link>
         </Nav>

@@ -32,6 +32,7 @@ router.get('/getPost/:id', async (req, res) => {
 // Update a post
 router.put('/update/:id', async (req, res) => {
     try {
+        console.log(req.params.id);
         const {  description } = req.body;
         const updatedPost = await Post.updatePost(req.params.id, description);
         if (!updatedPost) {
@@ -54,9 +55,9 @@ router.delete('/delete/:id', async (req, res) => {
 });
 
 // Get all posts
-router.get('/posts', async (req, res) => {
+router.get('/posts/:username', async (req, res) => {
     try {
-        const posts = await Post.getAllPosts();
+        const posts = await Post.getAllPosts(req.params.username);
         res.send(posts);
     } catch (error) {
         res.status(400).send({ message: error.message });

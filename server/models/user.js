@@ -17,13 +17,15 @@ const User = mongoose.model("User", userSchema);
 
 // 4. create CRUD functions on model
 //CREATE a user
-async function register(username, password) {
+async function register(firstname,lastname,username, password) {
   const user = await getUser(username);
   if(user) throw Error('Username already in use');
 
   const salt = await bcrypt.genSalt(10);
   const hashed=await bcrypt.hash(password , salt);
   const newUser = await User.create({
+    firstname:firstname,
+    lastname:lastname,
     username: username,
     password: hashed
   });

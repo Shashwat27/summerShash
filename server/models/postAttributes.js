@@ -41,7 +41,7 @@ async function createPostAttribute(postData) {
       const updatedPost = await PostAttribute.findOneAndUpdate(
         { postAttributeId: postId },
         newData,
-        { new: true } // Return the updated document
+        { new: true } 
       );
       console.log('Updated post attribute:', updatedPost);
     } catch (error) {
